@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, "release: ")
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo ${{github.event.pull_request.body}}
