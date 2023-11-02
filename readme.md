@@ -1,1 +1,1 @@
-http://47.92.193.33/flappy-chick/
+http://xxx:xxx/flappy-chick/
